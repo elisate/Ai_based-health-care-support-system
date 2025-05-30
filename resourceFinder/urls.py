@@ -65,7 +65,7 @@ urlpatterns = [
     path("/contact/createContact",createContact),
 
     # -----------------SUPER ADMIN-------------------------
-     path('recommend/hospitals', get_all_hospitals)
+     path('/hospitals', get_all_hospitals)
     
 ]
 
