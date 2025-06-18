@@ -7,7 +7,7 @@ class UserRole(str, Enum):
     PATIENT = "patient"
     DOCTOR = "doctor"
     HOSPITAL = "hospital"
-    SUPER_ADMIN="superAdmin"
+    SUPER_ADMIN="superadmin"
 
 class User(Document):
     firstname = StringField(required=False)
@@ -16,6 +16,7 @@ class User(Document):
     phone = StringField(required=False)
     email = StringField(required=True, unique=True)
     password = StringField(required=True)
+    national_id = StringField(required=False)  # ✅ required and unique
     userRole = StringField(
         choices=[role.value for role in UserRole],
         default=UserRole.PATIENT.value

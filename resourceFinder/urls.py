@@ -25,11 +25,13 @@ from resourceFinder.contactView import createContact
 from resourceFinder.treatmentView import create_treatment
 
 from resourceFinder.specialViews.patientTreatedByDoctor import patients_and_treatments_by_doctor
+from resourceFinder.specialViews.loadPatientDataByNatId import load_patient_data
 
 urlpatterns = [
     #------------------AUTHENTICATION----------------------
     path("/register",register_user),
     path("/login",login_user),
+    path("/loadPatientData",load_patient_data),
     #------------------ARTIFICIAL INTELLIGENCE---------------
     path("/resourceFinder",patient_predict),
     path("/liveResultPredicted",get_prediction_result),
@@ -50,6 +52,7 @@ urlpatterns = [
     path("/schedule/update_day",update_schedule_slot),
     path("/schedule/delete_slot",delete_schedule_slot),
     path("/schedule/getByHospitalName/<str:hospital_name>/",get_hospital_schedule_by_name),
+    
     #--------------APPOINTMENT-------------------------
     path("/Appointment/createRequest",request_hospital_appointment),
     path("/Appointment/getAppointmentByHospId/<hospital_id>",get_appointments_by_hospital),

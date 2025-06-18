@@ -109,7 +109,15 @@ def get_patients_by_hospital(request, hospital_id):
             if not hospital:
                 return JsonResponse({'error': 'Hospital not found'}, status=404)
 
-            patients = Patient.objects(hospital=hospital)
+            # Include both direct hospital and assigned_hospitals
+            patients = Patient.objects.filter(
+                __raw__={
+                    "$or": [
+                        {"hospital": hospital.id},
+                        {"assigned_hospitals": hospital.id}
+                    ]
+                }
+            )
 
             patient_list = []
             for patient in patients:

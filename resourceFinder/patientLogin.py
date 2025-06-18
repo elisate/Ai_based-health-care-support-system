@@ -44,6 +44,7 @@ def login_user(request):
             "firstname": user.firstname,
             "lastname": user.lastname,
             "email": user.email,
+            "national_id":user.national_id,
             "userRole": user.userRole
         }
 

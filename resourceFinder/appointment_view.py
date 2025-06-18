@@ -14,6 +14,7 @@ from resourceFinder.utility.email_sender import send_email
 from rest_framework.decorators import api_view
 from django.utils.dateformat import format as date_format
 from resourceFinder.medical_ai.doctorModel import Doctor
+from resourceFinder.medical_ai.patientModel import Patient
 
 @csrf_exempt
 def request_hospital_appointment(request):
@@ -21,41 +22,47 @@ def request_hospital_appointment(request):
         return JsonResponse({"error": "Only POST allowed"}, status=405)
 
     try:
-        # 1. Get user ID from request
         user_id = getattr(request, "user_id", None)
         if not user_id:
             return JsonResponse({"error": "Unauthorized"}, status=401)
 
-        # 2. Parse request data
         data = json.loads(request.body)
         hospital_name = data.get("hospital_name")
-        appointment_datetime_str = data.get("appointment_date")  # Example: "2025-05-15T14:58"
-        start_time = data.get("start_time")  # Optional
-        end_time = data.get("end_time")      # Optional
+        appointment_datetime_str = data.get("appointment_date")
+        start_time = data.get("start_time")
+        end_time = data.get("end_time")
 
         if not hospital_name or not appointment_datetime_str:
             return JsonResponse({"error": "hospital_name and appointment_date are required"}, status=400)
 
-        # 3. Fetch models
         user = User.objects(id=user_id).first()
         hospital = Hospital.objects(hospital_name=hospital_name).first()
         prediction = PredictionResult.objects(user=user).order_by("-created_at").first()
 
+        # ✅ Create patient if missing
+        patient = Patient.objects(user=user).first()
+        if not patient:
+            patient = Patient(
+                user=user,
+                national_id=user.national_id,
+                firstname=user.firstname,
+                lastname=user.lastname,
+                email=user.email
+            )
+            patient.save()
+
         if not all([user, hospital, prediction]):
             return JsonResponse({"error": "Missing user, hospital, or prediction"}, status=404)
 
-        # 4. Parse datetime and fallback for times if not provided
         appointment_dt = datetime.fromisoformat(appointment_datetime_str)
         day_name = appointment_dt.strftime("%A").lower()
 
         if not start_time:
             start_time = appointment_dt.strftime("%H:%M")
-
         if not end_time:
             temp_dt = appointment_dt + timedelta(minutes=30)
             end_time = temp_dt.strftime("%H:%M")
 
-        # 5. Create and save appointment
         appointment = Appointment(
             user=user,
             hospital=hospital,
@@ -68,7 +75,15 @@ def request_hospital_appointment(request):
         )
         appointment.save()
 
-        # 6. Response
+        # ✅ Assign hospital to patient
+        if hospital not in patient.assigned_hospitals:
+            patient.assigned_hospitals.append(hospital)
+            patient.save()
+
+        if patient not in hospital.patients_assigned:
+            hospital.patients_assigned.append(patient)
+            hospital.save()
+
         return JsonResponse({
             "message": "Appointment booked successfully",
             "appointment": {

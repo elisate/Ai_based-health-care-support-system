@@ -1,11 +1,10 @@
-# patientModel.py
 from mongoengine import Document, StringField, ListField, ReferenceField
 from resourceFinder.medical_ai.userModel import User
-from resourceFinder.medical_ai.hospitalModel import Hospital
 
 class Patient(Document):
     user = ReferenceField(User, required=True, unique=True)
-    national_id = StringField()
+    email = StringField()
+    national_id = StringField(required=False, unique=True)
     profile_image = StringField()
     age = StringField()
     gender = StringField(choices=["Male", "Female", "Other"])
@@ -14,15 +13,16 @@ class Patient(Document):
     weight_kg = StringField()
     firstname = StringField()
     lastname = StringField()
-    hospital = ReferenceField(Hospital, required=False)
+    
+    # ✅ Safe circular reference via string
+    hospital = ReferenceField('Hospital', required=False)
+    assigned_hospitals = ListField(ReferenceField('Hospital'))  # ✅ Added for tracking
 
     medical_history = ListField(StringField())
     allergies = ListField(StringField())
     ongoing_treatments = ListField(StringField())
     emergency_contact = StringField()
-
-    #  Correct way to reference Treatment to avoid circular import
     treatments = ListField(ReferenceField('Treatment'))
 
     def get_full_name(self):
-        return f"{self.user.firstname} {self.user.lastname}"
+        return f"{self.firstname} {self.lastname}"
