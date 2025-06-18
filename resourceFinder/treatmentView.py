@@ -15,7 +15,7 @@ def create_treatment(request):
     try:
         data = json.loads(request.body)
 
-        # Get the appointment
+        # Get the appointment  make sure on this
         appointment = Appointment.objects.get(id=data['appointment_id'])
 
         # Get doctor from appointment
