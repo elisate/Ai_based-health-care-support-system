@@ -1,12 +1,14 @@
 from django.urls import path
 from .views import patient_predict
-from .patientRegister import register_user
+from .patientRegister import (register_user,get_all_users)
 from .patientLogin import login_user
 from .Pridiction_Res_view import (get_prediction_result,get_prediction_by_id)
 from resourceFinder.hospitalView import (
     create_hospital,get_all_hospitals
 )
-from resourceFinder.doctorView import (create_doctor,get_doctors_by_hospital,get_doctor_by_id)
+from resourceFinder.doctorView import (create_doctor,get_doctors_by_hospital,
+                                       get_doctor_by_id,
+                                       get_all_doctors)
 from resourceFinder.patientView import (create_patient,get_patients_by_hospital)
 from resourceFinder.hospital_schedule_view import (create_or_update_hospital_schedule,
                                                    get_hospital_schedule,update_schedule_slot,
@@ -38,7 +40,7 @@ urlpatterns = [
     path("/liveResultPredicted",get_prediction_result),
     path("/liveResultPredicted/predictions/<str:prediction_id>/",get_prediction_by_id),
     #----------------HOSPITAL------------------
-    path("/hospitals/create",create_hospital),
+    path("/hospitals/create",create_hospital,get_all_hospitals),
     #---------------DOCTOR------------
     path("/doctor/create",create_doctor),
     path("/doctor/getDoctorById/<str:doctor_id>",get_doctor_by_id),
@@ -69,7 +71,9 @@ urlpatterns = [
     path("/contact/createContact",createContact),
 
     # -----------------SUPER ADMIN-------------------------
-     path('/hospitals', get_all_hospitals)
+     path('/getAllHospitals', get_all_hospitals),
+     path("/getAllUsers",get_all_users),
+     path("/getAllDoctors",get_all_doctors)
     
 ]
 

@@ -8,7 +8,7 @@ from datetime import datetime
 import json
 import jwt
 import traceback
-
+from django.views.decorators.http import require_GET
 @csrf_exempt
 def register_user(request):
     if request.method != "POST":
@@ -89,6 +89,29 @@ def register_user(request):
 
     except json.JSONDecodeError:
         return JsonResponse({"error": "Invalid JSON format"}, status=400)
+    except Exception as e:
+        traceback.print_exc()
+        return JsonResponse({"error": str(e)}, status=500)
+
+
+@require_GET
+def get_all_users(request):
+    try:
+        users = User.objects()  # Fetch all users
+        users_data = []
+
+        for user in users:
+            users_data.append({
+                "id": str(user.id),
+                "firstname": user.firstname,
+                "lastname": user.lastname,
+                "email": user.email,
+                "national_id": user.national_id,
+                "userRole": user.userRole,
+            })
+
+        return JsonResponse({"users": users_data}, status=200)
+
     except Exception as e:
         traceback.print_exc()
         return JsonResponse({"error": str(e)}, status=500)
