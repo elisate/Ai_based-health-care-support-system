@@ -32,7 +32,7 @@ urlpatterns = [
     path("/register",register_user),
     path("/login",login_user),
     path("/loadPatientData",load_patient_data),
-    path("/patientGetByHisId",patient_info_and_treatments),
+    path("/patientGetDataByHisId/<str:patient_id>/",patient_info_and_treatments),
     #------------------ARTIFICIAL INTELLIGENCE---------------
     path("/resourceFinder",patient_predict),
     path("/liveResultPredicted",get_prediction_result),
