@@ -2,6 +2,8 @@ from django.http import JsonResponse
 from resourceFinder.medical_ai.PredictionResult_model import PredictionResult
 from resourceFinder.medical_ai.userModel import User
 
+from django.views.decorators.csrf import csrf_exempt
+from bson import ObjectId
 def get_prediction_result(request):
     if request.method == "GET":
         try:
@@ -48,6 +50,27 @@ def get_prediction_by_id(request, prediction_id):
             prediction_data["prediction_id"] = str(prediction.id)
 
             return JsonResponse(prediction_data, status=200)
+
+        except Exception as e:
+            return JsonResponse({"error": str(e)}, status=500)
+
+    return JsonResponse({"error": "Invalid request method. Only GET allowed."}, status=405)
+
+
+@csrf_exempt
+def get_all_predictions(request):
+    if request.method == "GET":
+        try:
+            predictions = PredictionResult.objects().order_by("-created_at")
+
+            prediction_list = []
+            for prediction in predictions:
+                data = prediction.to_mongo().to_dict()
+                data["_id"] = str(data["_id"])  # ✅ Convert ObjectId to string
+                data["user"] = str(data["user"]) if "user" in data else None  # if you include user field
+                prediction_list.append(data)
+
+            return JsonResponse({"predictions": prediction_list}, status=200)
 
         except Exception as e:
             return JsonResponse({"error": str(e)}, status=500)

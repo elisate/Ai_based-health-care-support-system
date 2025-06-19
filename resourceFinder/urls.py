@@ -2,7 +2,8 @@ from django.urls import path
 from .views import patient_predict
 from .patientRegister import (register_user,get_all_users)
 from .patientLogin import login_user
-from .Pridiction_Res_view import (get_prediction_result,get_prediction_by_id)
+from .Pridiction_Res_view import (get_prediction_result,get_prediction_by_id,
+                                  get_all_predictions)
 from resourceFinder.hospitalView import (
     create_hospital,get_all_hospitals
 )
@@ -73,7 +74,9 @@ urlpatterns = [
     # -----------------SUPER ADMIN-------------------------
      path('/getAllHospitals', get_all_hospitals),
      path("/getAllUsers",get_all_users),
-     path("/getAllDoctors",get_all_doctors)
+     path("/getAllDoctors",get_all_doctors),
+     path("/getAllPredictions",get_all_predictions)
+
     
 ]
 
