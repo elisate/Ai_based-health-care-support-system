@@ -25,13 +25,14 @@ from resourceFinder.contactView import createContact
 from resourceFinder.treatmentView import create_treatment
 
 from resourceFinder.specialViews.patientTreatedByDoctor import patients_and_treatments_by_doctor
-from resourceFinder.specialViews.loadPatientDataByNatId import load_patient_data
+from resourceFinder.specialViews.loadPatientDataByNatId import (load_patient_data,patient_info_and_treatments)
 
 urlpatterns = [
     #------------------AUTHENTICATION----------------------
     path("/register",register_user),
     path("/login",login_user),
     path("/loadPatientData",load_patient_data),
+    path("/patientGetByHisId",patient_info_and_treatments),
     #------------------ARTIFICIAL INTELLIGENCE---------------
     path("/resourceFinder",patient_predict),
     path("/liveResultPredicted",get_prediction_result),

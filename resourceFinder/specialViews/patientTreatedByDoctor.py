@@ -69,3 +69,5 @@ def patients_and_treatments_by_doctor(request, doctor_id):
         response_data.append(patient_data)
 
     return JsonResponse({"patients": response_data})
+
+

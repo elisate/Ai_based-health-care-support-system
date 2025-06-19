@@ -1,6 +1,7 @@
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 import json
+from bson import ObjectId
 from resourceFinder.medical_ai.patientModel import Patient
 from resourceFinder.medical_ai.treatmentModel import Treatment
 
@@ -61,3 +62,53 @@ def load_patient_data(request):
     except Exception as e:
         # Log e if needed for debugging
         return JsonResponse({"error": str(e)}, status=500)
+
+
+def patient_info_and_treatments(request, patient_id):
+    try:
+        patient_obj_id = ObjectId(patient_id)
+    except:
+        return JsonResponse({"error": "Invalid patient ID"}, status=400)
+
+    # Fetch patient
+    try:
+        patient = Patient.objects.get(id=patient_obj_id)
+    except Patient.DoesNotExist:
+        return JsonResponse({"error": "Patient not found"}, status=404)
+
+    # Fetch treatments for the patient
+    treatments = Treatment.objects(patient=patient_obj_id)
+
+    user = patient.user
+    full_name = f"{user.firstname} {user.lastname}" if user else "Unknown"
+
+    patient_data = {
+        "id": str(patient.id),
+        "full_name": full_name,
+        "age": patient.age,
+        "gender": patient.gender,
+        "phone": patient.phone,
+        "hospital": patient.hospital.name if patient.hospital else None,
+        "national_id": patient.national_id,
+        "profile_image": patient.profile_image,
+        "height_cm": patient.height_cm,
+        "weight_kg": patient.weight_kg,
+        "medical_history": patient.medical_history,
+        "allergies": patient.allergies,
+        "ongoing_treatments": patient.ongoing_treatments,
+        "emergency_contact": patient.emergency_contact,
+        "treatments": []
+    }
+
+    for treatment in treatments:
+        patient_data["treatments"].append({
+            "id": str(treatment.id),
+            "appointment_id": str(treatment.appointment.id) if treatment.appointment else None,
+            "symptoms": treatment.symptoms,
+            "diagnosis": treatment.diagnosis,
+            "prescription": treatment.prescription,
+            "notes": treatment.notes,
+            "created_at": treatment.created_at.isoformat()
+        })
+
+    return JsonResponse(patient_data)
