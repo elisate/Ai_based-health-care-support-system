@@ -10,7 +10,9 @@ from resourceFinder.hospitalView import (
 from resourceFinder.doctorView import (create_doctor,get_doctors_by_hospital,
                                        get_doctor_by_id,
                                        get_all_doctors)
-from resourceFinder.patientView import (create_patient,get_patients_by_hospital)
+from resourceFinder.patientView import (create_patient,
+                                        get_patients_by_hospital,
+                                        get_all_patients)
 from resourceFinder.hospital_schedule_view import (create_or_update_hospital_schedule,
                                                    get_hospital_schedule,update_schedule_slot,
                                                    delete_schedule_slot,
@@ -75,7 +77,8 @@ urlpatterns = [
      path('/getAllHospitals', get_all_hospitals),
      path("/getAllUsers",get_all_users),
      path("/getAllDoctors",get_all_doctors),
-     path("/getAllPredictions",get_all_predictions)
+     path("/getAllPredictions",get_all_predictions),
+     path("/getAllPatients",get_all_patients)
 
     
 ]

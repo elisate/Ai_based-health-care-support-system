@@ -138,3 +138,30 @@ def get_patients_by_hospital(request, hospital_id):
             return JsonResponse({'error': str(e)}, status=500)
 
     return JsonResponse({'error': 'Only GET method is allowed'}, status=405)
+
+
+csrf_exempt
+def get_all_patients(request):
+    if request.method == 'GET':
+        try:
+            patients = Patient.objects.all()
+
+            patient_list = []
+            for patient in patients:
+                patient_list.append({
+                    'patient_id': str(patient.id),
+                    'firstname': patient.firstname,
+                    'lastname': patient.lastname,
+                    'email': patient.user.email if patient.user else None,
+                    'phone': patient.phone,
+                    'age': patient.age,
+                    'gender': patient.gender,
+                    'profile_image': patient.profile_image,
+                })
+
+            return JsonResponse({'patients': patient_list}, status=200)
+
+        except Exception as e:
+            return JsonResponse({'error': str(e)}, status=500)
+
+    return JsonResponse({'error': 'Only GET method is allowed'}, status=405)
