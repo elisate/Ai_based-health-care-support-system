@@ -30,7 +30,9 @@ from resourceFinder.contactView import createContact
 from resourceFinder.treatmentView import create_treatment
 
 from resourceFinder.specialViews.patientTreatedByDoctor import patients_and_treatments_by_doctor
-from resourceFinder.specialViews.loadPatientDataByNatId import (load_patient_data,patient_info_and_treatments)
+from resourceFinder.specialViews.loadPatientDataByNatId import (load_patient_data,
+                                                                patient_info_and_treatments,
+                                                                get_patient_by_national_id)
 
 urlpatterns = [
     #------------------AUTHENTICATION----------------------
@@ -78,7 +80,9 @@ urlpatterns = [
      path("/getAllUsers",get_all_users),
      path("/getAllDoctors",get_all_doctors),
      path("/getAllPredictions",get_all_predictions),
-     path("/getAllPatients",get_all_patients)
+     path("/getAllPatients",get_all_patients),
+     path("/GetLoaded/<str:national_id>",get_patient_by_national_id)
+
 
     
 ]

@@ -112,3 +112,54 @@ def patient_info_and_treatments(request, patient_id):
         })
 
     return JsonResponse(patient_data)
+
+
+
+
+def get_patient_by_national_id(request, national_id):
+    if request.method != "GET":
+        return JsonResponse({"error": "Only GET method allowed"}, status=405)
+
+    try:
+        # Find patient
+        patient = Patient.objects(national_id=national_id).first()
+        if not patient:
+            return JsonResponse({"error": "Patient not found."}, status=404)
+
+        treatments = Treatment.objects(patient=patient.id)
+
+        response_data = {
+            "patient": {
+                "patient_id": str(patient.id),
+                "firstname": patient.firstname,
+                "lastname": patient.lastname,
+                "national_id": patient.national_id,
+                "gender": patient.gender,
+                "age": patient.age,
+                "phone": patient.phone,
+                "height_cm": patient.height_cm,
+                "weight_kg": patient.weight_kg,
+                "profile_image": patient.profile_image,
+                "treatments": [
+                    {
+                        "treatment_id": str(t.id),
+                        "doctor": {
+                            "id": str(t.doctor.id),
+                            "name": f"{t.doctor.firstname} {t.doctor.lastname}"
+                        } if t.doctor else None,
+                        "appointment": str(t.appointment.id) if t.appointment else None,
+                        "symptoms": t.symptoms,
+                        "diagnosis": t.diagnosis,
+                        "prescription": t.prescription,
+                        "notes": t.notes,
+                        "created_at": t.created_at.isoformat()
+                    }
+                    for t in treatments
+                ]
+            }
+        }
+
+        return JsonResponse(response_data, status=200)
+
+    except Exception as e:
+        return JsonResponse({"error": str(e)}, status=500)
