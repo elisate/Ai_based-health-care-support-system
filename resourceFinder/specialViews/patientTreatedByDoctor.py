@@ -2,33 +2,40 @@ from bson import ObjectId
 from django.http import JsonResponse
 from resourceFinder.medical_ai.treatmentModel import Treatment
 from resourceFinder.medical_ai.patientModel import Patient
-from resourceFinder.medical_ai.doctorModel import Doctor  # Make sure this is imported if needed
+from resourceFinder.medical_ai.doctorModel import Doctor
 
-def patients_and_treatments_by_doctor(request, doctor_id):
+def patients_and_treatments_by_doctor(request, doctor_id):  # doctor_id = Doctor._id
     try:
         doctor_obj_id = ObjectId(doctor_id)
     except:
         return JsonResponse({"error": "Invalid doctor ID"}, status=400)
 
-    # Fetch treatments associated with the actual doctor ID (not user ID)
-    treatments = Treatment.objects(doctor=doctor_obj_id)
+    # Fetch the Doctor object
+    doctor = Doctor.objects(id=doctor_obj_id).first()
+    if not doctor:
+        return JsonResponse({"patients": [], "message": "Doctor not found."}, status=404)
+
+    # Use doctor.user.id because Treatment.doctor references the User model
+    treatments = Treatment.objects(doctor=doctor.user.id)
 
     if not treatments:
         return JsonResponse({"patients": [], "message": "No treatments found for this doctor."})
 
+    # Group treatments by patient
     patient_map = {}
     for treatment in treatments:
         if not treatment.patient:
-            continue  # skip if patient is None
+            continue
 
-        patient_id = str(treatment.patient.id)
-        if patient_id not in patient_map:
-            patient_map[patient_id] = {
+        pid = str(treatment.patient.id)
+        if pid not in patient_map:
+            patient_map[pid] = {
                 "patient": treatment.patient,
                 "treatments": []
             }
-        patient_map[patient_id]["treatments"].append(treatment)
+        patient_map[pid]["treatments"].append(treatment)
 
+    # Build the response
     response_data = []
     for entry in patient_map.values():
         patient = entry["patient"]
@@ -55,19 +62,17 @@ def patients_and_treatments_by_doctor(request, doctor_id):
             "treatments": []
         }
 
-        for treatment in treatment_list:
+        for t in treatment_list:
             patient_data["treatments"].append({
-                "id": str(treatment.id),
-                "appointment_id": str(treatment.appointment.id) if treatment.appointment else None,
-                "symptoms": treatment.symptoms,
-                "diagnosis": treatment.diagnosis,
-                "prescription": treatment.prescription,
-                "notes": treatment.notes,
-                "created_at": treatment.created_at.isoformat()
+                "id": str(t.id),
+                "appointment_id": str(t.appointment.id) if t.appointment else None,
+                "symptoms": t.symptoms,
+                "diagnosis": t.diagnosis,
+                "prescription": t.prescription,
+                "notes": t.notes,
+                "created_at": t.created_at.isoformat()
             })
 
         response_data.append(patient_data)
 
     return JsonResponse({"patients": response_data})
-
-
