@@ -4,24 +4,28 @@ from resourceFinder.medical_ai.treatmentModel import Treatment
 from resourceFinder.medical_ai.patientModel import Patient
 from resourceFinder.medical_ai.doctorModel import Doctor
 
-def patients_and_treatments_by_doctor(request, doctor_id):  # doctor_id = Doctor._id
+def patients_and_treatments_by_doctor(request, doctor_id):
+    from bson import ObjectId
+    from django.http import JsonResponse
+    from resourceFinder.medical_ai.treatmentModel import Treatment
+    from resourceFinder.medical_ai.patientModel import Patient
+    from resourceFinder.medical_ai.doctorModel import Doctor
+
     try:
         doctor_obj_id = ObjectId(doctor_id)
     except:
         return JsonResponse({"error": "Invalid doctor ID"}, status=400)
 
-    # Fetch the Doctor object
-    doctor = Doctor.objects(id=doctor_obj_id).first()
+    # FIX 1: Search Doctor by `user` reference, not `id`
+    doctor = Doctor.objects(user=doctor_obj_id).first()
     if not doctor:
         return JsonResponse({"patients": [], "message": "Doctor not found."}, status=404)
 
-    # Use doctor.user.id because Treatment.doctor references the User model
     treatments = Treatment.objects(doctor=doctor.user.id)
 
     if not treatments:
         return JsonResponse({"patients": [], "message": "No treatments found for this doctor."})
 
-    # Group treatments by patient
     patient_map = {}
     for treatment in treatments:
         if not treatment.patient:
@@ -35,7 +39,6 @@ def patients_and_treatments_by_doctor(request, doctor_id):  # doctor_id = Doctor
             }
         patient_map[pid]["treatments"].append(treatment)
 
-    # Build the response
     response_data = []
     for entry in patient_map.values():
         patient = entry["patient"]
@@ -44,13 +47,14 @@ def patients_and_treatments_by_doctor(request, doctor_id):  # doctor_id = Doctor
         user = patient.user
         full_name = f"{user.firstname} {user.lastname}" if user else "Unknown"
 
+        # FIX 2: Safe hospital access
         patient_data = {
             "id": str(patient.id),
             "full_name": full_name,
             "age": patient.age,
             "gender": patient.gender,
             "phone": patient.phone,
-            "hospital": patient.hospital.name if patient.hospital else None,
+            "hospital": str(patient.hospital) if patient.hospital else None,
             "national_id": patient.national_id,
             "profile_image": patient.profile_image,
             "height_cm": patient.height_cm,
