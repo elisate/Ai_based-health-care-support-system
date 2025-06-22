@@ -116,15 +116,13 @@ def patient_info_and_treatments(request, patient_id):
 
 
 
-def get_patient_by_national_id(request, national_id):
+def get_patient_by_national_id(request, patient_id):
     if request.method != "GET":
         return JsonResponse({"error": "Only GET method allowed"}, status=405)
 
     try:
-        # Find patient
-        patient = Patient.objects(national_id=national_id).first()
-        if not patient:
-            return JsonResponse({"error": "Patient not found."}, status=404)
+        # Convert patient_id string to ObjectId and find the patient
+        patient = Patient.objects.get(id=ObjectId(patient_id))
 
         treatments = Treatment.objects(patient=patient.id)
 

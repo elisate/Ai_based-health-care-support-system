@@ -81,7 +81,7 @@ urlpatterns = [
      path("/getAllDoctors",get_all_doctors),
      path("/getAllPredictions",get_all_predictions),
      path("/getAllPatients",get_all_patients),
-     path("/GetLoaded/<str:national_id>",get_patient_by_national_id)
+     path("/GetLoaded/<str:patient_id>",get_patient_by_national_id)
 
 
     
