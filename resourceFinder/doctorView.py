@@ -1,8 +1,13 @@
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth.hashers import make_password
+from django.http import JsonResponse
+from django.views.decorators.http import require_http_methods
 from django.conf import settings
 from datetime import datetime
+from rest_framework.parsers import MultiPartParser
+from resourceFinder.utility.cloudinary_helper import upload_image_to_cloudinary
+import json  # Add at the top of your file
 import jwt
 from bson.objectid import ObjectId
 
@@ -223,3 +228,72 @@ def delete_doctor_by_id(request, doctor_id):
 
     except Exception as e:
         return JsonResponse({'error': str(e)}, status=500)
+
+
+@csrf_exempt
+def update_doctor_by_id(request, doctor_id):
+    if request.method != 'PUT':
+        return JsonResponse({'error': 'Only PUT method is allowed'}, status=405)
+
+    try:
+        # Validate doctor_id
+        if not ObjectId.is_valid(doctor_id):
+            return JsonResponse({'error': 'Invalid doctor ID'}, status=400)
+
+        doctor = Doctor.objects(id=ObjectId(doctor_id)).first()
+        if not doctor:
+            return JsonResponse({'error': 'Doctor not found'}, status=404)
+
+        # Determine content type and extract data
+        if request.content_type.startswith('multipart/form-data'):
+            data = request.POST
+            image = request.FILES.get('profile_image')
+        else:
+            try:
+                data = json.loads(request.body.decode('utf-8'))
+            except Exception as e:
+                return JsonResponse({'error': f'Invalid JSON: {str(e)}'}, status=400)
+            image = None
+
+        # Update User fields
+        if doctor.user:
+            doctor.user.firstname = data.get('firstname', doctor.user.firstname)
+            doctor.user.lastname = data.get('lastname', doctor.user.lastname)
+            doctor.user.email = data.get('email', doctor.user.email)
+            doctor.user.save()
+
+        # Update Doctor fields
+        doctor.full_name = data.get('full_name', doctor.full_name)
+        doctor.age = data.get('age', doctor.age)
+        doctor.gender = data.get('gender', doctor.gender)
+        doctor.phone = data.get('phone', doctor.phone)
+        doctor.email = data.get('email', doctor.email)
+        doctor.notes = data.get('notes', doctor.notes)
+        doctor.specialty = data.get('specialty', doctor.specialty)
+
+        # Handle lists properly
+        certifications = data.get('certifications')
+        if certifications is not None and isinstance(certifications, list):
+            doctor.certifications = certifications
+
+        available_times = data.get('available_times')
+        if available_times is not None and isinstance(available_times, list):
+            doctor.available_times = available_times
+
+        # Update hospital if given
+        hospital_id = data.get('hospital_id')
+        if hospital_id and ObjectId.is_valid(hospital_id):
+            hospital = Hospital.objects(id=hospital_id).first()
+            if hospital:
+                doctor.hospital = hospital
+
+        # Upload image if available
+        if image:
+            doctor.profile_image_url = upload_image_to_cloudinary(image)
+
+        doctor.save()
+
+        return JsonResponse({'message': 'Doctor updated successfully'}, status=200)
+
+    except Exception as e:
+        return JsonResponse({'error': f'Unexpected error: {str(e)}'}, status=500)
