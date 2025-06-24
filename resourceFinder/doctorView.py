@@ -191,3 +191,35 @@ def get_all_doctors(request):
 
     except Exception as e:
         return JsonResponse({'error': str(e)}, status=500)
+
+@csrf_exempt
+def delete_doctor_by_id(request, doctor_id):
+    try:
+        if request.method != 'DELETE':
+            return JsonResponse({'error': 'Only DELETE method is allowed'}, status=405)
+
+        if not ObjectId.is_valid(doctor_id):
+            return JsonResponse({'error': 'Invalid doctor ID'}, status=400)
+
+        doctor = Doctor.objects(id=ObjectId(doctor_id)).first()
+
+        if not doctor:
+            return JsonResponse({'error': 'Doctor not found'}, status=404)
+
+        # Remove doctor from hospital’s assigned list if applicable
+        if doctor.hospital:
+            hospital = doctor.hospital
+            if doctor in hospital.doctors_assigned:
+                hospital.doctors_assigned.remove(doctor)
+                hospital.save()
+
+        # Also delete linked user
+        if doctor.user:
+            doctor.user.delete()
+
+        doctor.delete()
+
+        return JsonResponse({'message': 'Doctor deleted successfully'}, status=200)
+
+    except Exception as e:
+        return JsonResponse({'error': str(e)}, status=500)

@@ -9,7 +9,7 @@ from resourceFinder.hospitalView import (
 )
 from resourceFinder.doctorView import (create_doctor,get_doctors_by_hospital,
                                        get_doctor_by_id,
-                                       get_all_doctors)
+                                       get_all_doctors,delete_doctor_by_id)
 from resourceFinder.patientView import (create_patient,
                                         get_patients_by_hospital,
                                         get_all_patients)
@@ -52,6 +52,7 @@ urlpatterns = [
     path("/doctor/getDoctorByHospitalId/<str:hospital_id>",get_doctors_by_hospital),
     path("/patient/create",create_patient),
     path("/doctor/treating",create_treatment),
+    path("/DeleteById/<str:doctor_id>",delete_doctor_by_id),
     #-----------------SPECIAL DOCTOR END POINT------------------------
     path("/doctor/patientTreated/<str:doctor_id>",patients_and_treatments_by_doctor),
     #----------------HOSPITAL SCHEDULE---------------
@@ -72,7 +73,7 @@ urlpatterns = [
     path('/appointment/assignToDoctor-status',assign_doctor_to_appointment),
     path('/appointment/by-doctor-id/<str:doctor_id>/', get_appointments_by_doctor_id),
 
-    #---------------------------------- CONTACT-------------
+    #---------------------------------- CONTACT---------------------
     path("/contact/createContact",createContact),
 
     # -----------------SUPER ADMIN-------------------------
