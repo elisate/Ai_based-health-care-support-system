@@ -1,9 +1,11 @@
 from django.urls import path
 from .views import patient_predict
-from .patientRegister import (register_user,get_all_users)
+from .patientRegister import (register_user,get_all_users,
+                              get_user_by_id,update_user_by_id)
 from .patientLogin import login_user
 from .Pridiction_Res_view import (get_prediction_result,get_prediction_by_id,
-                                  get_all_predictions)
+                                  get_all_predictions,
+                                  get_predictions_by_user_id)
 from resourceFinder.hospitalView import (
     create_hospital,get_all_hospitals
 )
@@ -43,7 +45,8 @@ urlpatterns = [
     path("/login",login_user),
     path("/loadPatientData",load_patient_data),
     path("/patientGetDataByHisId/<str:patient_id>/",patient_info_and_treatments),
-
+    path("/getuserById/<str:user_id>",get_user_by_id),
+    path("/updateuserById/<str:user_id>",update_user_by_id),
     #---------------------------PATIENT------------------------
     path('/patient/getById/<str:patient_id>', get_patient_by_id),
     path('/patient/deleteById/<str:patient_id>', delete_patient_by_id),
@@ -52,7 +55,7 @@ urlpatterns = [
     path("/resourceFinder",patient_predict),
     path("/liveResultPredicted",get_prediction_result),
     path("/liveResultPredicted/predictions/<str:prediction_id>/",get_prediction_by_id),
-    #----------------HOSPITAL------------------
+    path('/predictions/user/<str:user_id>/', get_predictions_by_user_id),    #----------------HOSPITAL------------------
     path("/hospitals/create",create_hospital,get_all_hospitals),
     #---------------DOCTOR------------
     path("/doctor/create",create_doctor),

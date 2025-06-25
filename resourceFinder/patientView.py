@@ -271,3 +271,7 @@ def update_patient_by_id(request, patient_id):
             return JsonResponse({'error': str(e)}, status=500)
 
     return JsonResponse({'error': 'Only PUT method is allowed'}, status=405)
+
+
+
+

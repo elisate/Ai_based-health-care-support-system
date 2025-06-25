@@ -5,6 +5,11 @@ from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth.hashers import make_password
 from django.conf import settings
 from datetime import datetime
+from mongoengine.errors import DoesNotExist, ValidationError
+from resourceFinder.utility.cloudinary_helper import upload_image_to_cloudinary
+
+
+from bson import ObjectId
 import json
 import jwt
 import traceback
@@ -115,3 +120,90 @@ def get_all_users(request):
     except Exception as e:
         traceback.print_exc()
         return JsonResponse({"error": str(e)}, status=500)
+    
+
+
+
+def get_user_by_id(request, user_id):
+    try:
+        user = User.objects.get(id=ObjectId(user_id))
+        user_data = {
+            "id": str(user.id),
+            "firstname": user.firstname,
+            "lastname": user.lastname,
+            "email": user.email,
+            "phone": user.phone,
+            "profile_image": user.profile_image,
+            "national_id": user.national_id,
+            "userRole": user.userRole,
+            "hospitalName": user.hospitalName,
+        }
+        return JsonResponse(user_data, status=200)
+    except (DoesNotExist, ValidationError):
+        return JsonResponse({"error": "User not found or invalid ID"}, status=404)
+    except Exception as e:
+        return JsonResponse({"error": str(e)}, status=500)
+    
+
+
+@csrf_exempt
+def update_user_by_id(request, user_id):
+    if request.method != 'PUT':
+        return JsonResponse({'error': 'Only PUT method allowed'}, status=405)
+
+    try:
+        user = User.objects(id=ObjectId(user_id)).first()
+        if not user:
+            return JsonResponse({'error': 'User not found'}, status=404)
+
+        if request.content_type.startswith('multipart/form-data'):
+            # For form-data (image + other fields)
+            firstname = request.POST.get('firstname')
+            lastname = request.POST.get('lastname')
+            email = request.POST.get('email')
+            national_id = request.POST.get('national_id')
+            profile_image = request.FILES.get('profile_image')
+
+            if firstname: user.firstname = firstname
+            if lastname: user.lastname = lastname
+            if email: user.email = email
+            if national_id: user.national_id = national_id
+            if profile_image:
+                image_url = upload_image_to_cloudinary(profile_image)
+                user.profile_image = image_url
+
+        else:
+            # JSON body
+            data = json.loads(request.body)
+            firstname = data.get('firstname')
+            lastname = data.get('lastname')
+            email = data.get('email')
+            national_id = data.get('national_id')
+            profile_image_url = data.get('profile_image')  # If updating URL directly
+
+            if firstname: user.firstname = firstname
+            if lastname: user.lastname = lastname
+            if email: user.email = email
+            if national_id: user.national_id = national_id
+            if profile_image_url:
+                user.profile_image = profile_image_url
+
+        user.save()
+
+        return JsonResponse({
+            'message': 'User updated successfully',
+            'user': {
+                'id': str(user.id),
+                'firstname': user.firstname,
+                'lastname': user.lastname,
+                'email': user.email,
+                'national_id': user.national_id,
+                'profile_image': user.profile_image
+            }
+        })
+
+    except json.JSONDecodeError:
+        return JsonResponse({'error': 'Invalid JSON format'}, status=400)
+    except Exception as e:
+        traceback.print_exc()
+        return JsonResponse({'error': str(e)}, status=500)

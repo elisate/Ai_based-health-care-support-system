@@ -15,6 +15,7 @@ class User(Document):
     hospitalName = StringField(required=False)
     phone = StringField(required=False)
     email = StringField(required=True, unique=True)
+    profile_image = StringField(require=False)
     password = StringField(required=True)
     national_id = StringField(required=False)  # ✅ required and unique
     userRole = StringField(
