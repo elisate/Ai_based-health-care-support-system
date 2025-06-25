@@ -38,6 +38,7 @@ from resourceFinder.specialViews.patientTreatedByDoctor import patients_and_trea
 from resourceFinder.specialViews.loadPatientDataByNatId import (load_patient_data,
                                                                 patient_info_and_treatments,
                                                                 get_patient_by_national_id)
+from resourceFinder.specialViews.loadPatientDataByNatId import get_patient_by_id
 
 urlpatterns = [
     #------------------AUTHENTICATION----------------------
@@ -56,7 +57,8 @@ urlpatterns = [
     path("/liveResultPredicted",get_prediction_result),
     path("/liveResultPredicted/predictions/<str:prediction_id>/",get_prediction_by_id),
     path('/predictions/user/<str:user_id>/', get_predictions_by_user_id),    #----------------HOSPITAL------------------
-    path("/hospitals/create",create_hospital,get_all_hospitals),
+    path("/hospitals/create", create_hospital),
+    path("/hospitals/create",get_all_hospitals),
     #---------------DOCTOR------------
     path("/doctor/create",create_doctor),
     path("/doctor/getDoctorById/<str:doctor_id>",get_doctor_by_id),
@@ -94,7 +96,8 @@ urlpatterns = [
      path("/getAllDoctors",get_all_doctors),
      path("/getAllPredictions",get_all_predictions),
      path("/getAllPatients",get_all_patients),
-     path("/GetLoaded/<str:patient_id>",get_patient_by_national_id)
+     path("/GetLoaded/<str:national_id>",get_patient_by_national_id),
+     path("/PatientId/<str:patient_id>",get_patient_by_id)
 
 
     
