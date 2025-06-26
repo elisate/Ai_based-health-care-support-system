@@ -39,7 +39,7 @@ from resourceFinder.specialViews.loadPatientDataByNatId import (load_patient_dat
                                                                 patient_info_and_treatments,
                                                                 get_patient_by_national_id)
 from resourceFinder.specialViews.loadPatientDataByNatId import get_patient_by_id
-
+from resourceFinder.specialViews.forgetPin import request_password_reset,reset_password_with_otp
 urlpatterns = [
     #------------------AUTHENTICATION----------------------
     path("/register",register_user),
@@ -97,8 +97,9 @@ urlpatterns = [
      path("/getAllPredictions",get_all_predictions),
      path("/getAllPatients",get_all_patients),
      path("/GetLoaded/<str:national_id>",get_patient_by_national_id),
-     path("/PatientId/<str:patient_id>",get_patient_by_id)
-
+     path("/PatientId/<str:patient_id>",get_patient_by_id),
+     path("/requestReset",request_password_reset),
+     path("/ChangePassword",reset_password_with_otp)
 
     
 ]
