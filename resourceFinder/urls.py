@@ -49,7 +49,7 @@ urlpatterns = [
     path("/getuserById/<str:user_id>",get_user_by_id),
     path("/updateuserById/<str:user_id>",update_user_by_id),
     #---------------------------PATIENT------------------------
-    path('/patient/getById/<str:patient_id>', get_patient_by_id),
+    path('/patient/getById/<str:patient_id>',get_patient_by_id),
     path('/patient/deleteById/<str:patient_id>', delete_patient_by_id),
     path('/patient/UpdateById/<str:patient_id>', update_patient_by_id),
     #------------------ARTIFICIAL INTELLIGENCE---------------

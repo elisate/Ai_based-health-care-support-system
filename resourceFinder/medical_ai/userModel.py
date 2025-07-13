@@ -18,8 +18,8 @@ class User(Document):
     profile_image = StringField(require=False)
     password = StringField(required=True)
     national_id = StringField(required=False)  # ✅ required and unique
-    reset_password_otp = StringField()
-    reset_password_expiry = DateTimeField()
+    reset_password_otp = StringField(required=False)
+    reset_password_expiry = DateTimeField(required=False)
     userRole = StringField(
         choices=[role.value for role in UserRole],
         default=UserRole.PATIENT.value
