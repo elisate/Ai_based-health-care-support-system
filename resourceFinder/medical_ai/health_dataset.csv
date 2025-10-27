@@ -1,30 +1,1001 @@
 Symptoms,Diagnosis,Recommended_Hospitals,Hospital_Location,Recommended_Doctors,Medical_Supplies,Medical_Resources
-"Fever, Cough, Fatigue",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
-"Chest Pain, Shortness of Breath",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
-"Headache, Nausea, Blurred Vision",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
-"Sore Throat, Swollen Glands",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
-"Fatigue, Weight Loss, Night Sweats",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
-"Joint Pain, Swelling",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
-"Stomach Pain, Diarrhea, Vomiting",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
-"Rash, Itching, Swelling",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
-"Frequent Urination, Thirst",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
-"Back Pain, Numbness in Legs",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
-"Coughing Blood, Chest Pain",Lung Cancer,OncoLife Center,"Boston, MA",Dr. Victor Tan,"Chemotherapy Drugs, Inhalers",National Cancer Institute Lung Cancer Page
-"Palpitations, Dizziness",Arrhythmia,CardioPulse Clinic,"Philadelphia, PA",Dr. Sophie Dubois,"Beta-blockers, ECG",Heart Rhythm Society Resources
-"Skin Lesions, Fever",Chickenpox,Community Health Clinic,"Portland, OR",Dr. Jacob Stein,"Calamine Lotion, Antivirals",CDC Chickenpox Guidelines
-"Mood Swings, Sleep Issues",Bipolar Disorder,MindCare Psychiatry,"Austin, TX",Dr. Sarah Johnson,"Mood Stabilizers, Therapy Sessions",NIMH Bipolar Disorder Education
-Severe Abdominal Pain,Appendicitis,Surgical Excellence Hospital,"San Jose, CA",Dr. Abdul Karim,"IV Fluids, Surgery",Johns Hopkins Appendicitis Care
-"fever, cough",common cold,City Hospital,Kigali,Dr. John,Paracetamol,Stethoscope
-"headache, blurred vision",migraine,General Hospital,"Los Angeles, CA",Dr. Emma,Aspirin,MRI Scanner
-"chest pain, breathlessness",heart disease,Heart Care Center,"Boston, MA",Dr. Smith,Nitroglycerin,ECG Machine
-"joint pain, swelling",arthritis,Orthopedic Clinic,"Chicago, IL",Dr. Wilson,Ibuprofen,X-ray Machine
-"stomach pain, nausea",gastritis,Gastro Center,"Houston, TX",Dr. Lee,Antacids,Endoscopy Equipment
-"high blood pressure, headache",hypertension,Cardio Clinic,"Miami, FL",Dr. Patel,Beta Blockers,Blood Pressure Monitor
-"weight loss, fatigue",diabetes,Diabetes Care,"San Francisco, CA",Dr. Sarah,Insulin,Glucose Meter
-"itchy skin, redness",allergy,Dermatology Clinic,"Denver, CO",Dr. Grace,Antihistamines,Allergy Test Kit
-"sore throat, difficulty swallowing",tonsillitis,ENT Hospital,"Phoenix, AZ",Dr. Alan,Lozenges,Throat Swab Kit
-"frequent urination, thirst",kidney disease,Nephro Center,"Dallas, TX",Dr. Daniel,Diuretics,Dialysis Machine
-"abdominal pain, bloating",appendicitis,Emergency Hospital,Kigali,Dr. Carla,Antibiotics,Ultrasound Machine
-"dizziness, fainting",anemia,Hematology Center,"Atlanta, GA",Dr. James,Iron Supplements,Hemoglobin Test Kit
-"back pain, leg numbness",sciatica,Neuro Clinic,"Nashville, TN",Dr. Arthur,Muscle Relaxants,CT Scanner
-"shortness of breath, cough",pneumonia,Lung Care Center,"Philadelphia, PA",Dr. Lisa,Antibiotics,Oxygen Therapy Machine
+"Joint Pain, Swelling, ExtraSymptom0",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom1",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Headache, Nausea, Blurred Vision, ExtraSymptom2",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Frequent Urination, Thirst, ExtraSymptom3",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Back Pain, Numbness in Legs, ExtraSymptom4",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Rash, Itching, Swelling, ExtraSymptom0",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom1",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Back Pain, Numbness in Legs, ExtraSymptom2",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Back Pain, Numbness in Legs, ExtraSymptom3",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom4",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Joint Pain, Swelling, ExtraSymptom0",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Frequent Urination, Thirst, ExtraSymptom1",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Fever, Cough, Fatigue, ExtraSymptom2",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Headache, Nausea, Blurred Vision, ExtraSymptom3",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Rash, Itching, Swelling, ExtraSymptom4",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Rash, Itching, Swelling, ExtraSymptom0",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Sore Throat, Swollen Glands, ExtraSymptom1",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Rash, Itching, Swelling, ExtraSymptom2",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Chest Pain, Shortness of Breath, ExtraSymptom3",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Frequent Urination, Thirst, ExtraSymptom4",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Rash, Itching, Swelling, ExtraSymptom0",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Back Pain, Numbness in Legs, ExtraSymptom1",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Rash, Itching, Swelling, ExtraSymptom2",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Rash, Itching, Swelling, ExtraSymptom3",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Rash, Itching, Swelling, ExtraSymptom4",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Headache, Nausea, Blurred Vision, ExtraSymptom0",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Joint Pain, Swelling, ExtraSymptom1",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Fever, Cough, Fatigue, ExtraSymptom2",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Sore Throat, Swollen Glands, ExtraSymptom3",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Joint Pain, Swelling, ExtraSymptom4",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Frequent Urination, Thirst, ExtraSymptom0",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Headache, Nausea, Blurred Vision, ExtraSymptom1",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Frequent Urination, Thirst, ExtraSymptom2",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom3",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Rash, Itching, Swelling, ExtraSymptom4",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom0",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Fever, Cough, Fatigue, ExtraSymptom1",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Chest Pain, Shortness of Breath, ExtraSymptom2",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Rash, Itching, Swelling, ExtraSymptom3",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Headache, Nausea, Blurred Vision, ExtraSymptom4",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Back Pain, Numbness in Legs, ExtraSymptom0",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Chest Pain, Shortness of Breath, ExtraSymptom1",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Back Pain, Numbness in Legs, ExtraSymptom2",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Fever, Cough, Fatigue, ExtraSymptom3",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Headache, Nausea, Blurred Vision, ExtraSymptom4",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Back Pain, Numbness in Legs, ExtraSymptom0",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Joint Pain, Swelling, ExtraSymptom1",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom2",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Chest Pain, Shortness of Breath, ExtraSymptom3",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom4",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Back Pain, Numbness in Legs, ExtraSymptom0",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Frequent Urination, Thirst, ExtraSymptom1",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom2",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Sore Throat, Swollen Glands, ExtraSymptom3",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Fever, Cough, Fatigue, ExtraSymptom4",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Fever, Cough, Fatigue, ExtraSymptom0",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom1",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom2",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom3",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Sore Throat, Swollen Glands, ExtraSymptom4",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom0",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Rash, Itching, Swelling, ExtraSymptom1",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Joint Pain, Swelling, ExtraSymptom2",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Joint Pain, Swelling, ExtraSymptom3",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Frequent Urination, Thirst, ExtraSymptom4",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Frequent Urination, Thirst, ExtraSymptom0",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Back Pain, Numbness in Legs, ExtraSymptom1",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Chest Pain, Shortness of Breath, ExtraSymptom2",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Frequent Urination, Thirst, ExtraSymptom3",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom4",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom0",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Headache, Nausea, Blurred Vision, ExtraSymptom1",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Joint Pain, Swelling, ExtraSymptom2",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Sore Throat, Swollen Glands, ExtraSymptom3",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Fever, Cough, Fatigue, ExtraSymptom4",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Chest Pain, Shortness of Breath, ExtraSymptom0",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Fever, Cough, Fatigue, ExtraSymptom1",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Headache, Nausea, Blurred Vision, ExtraSymptom2",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Sore Throat, Swollen Glands, ExtraSymptom3",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom4",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Headache, Nausea, Blurred Vision, ExtraSymptom0",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Back Pain, Numbness in Legs, ExtraSymptom1",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom2",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Back Pain, Numbness in Legs, ExtraSymptom3",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Rash, Itching, Swelling, ExtraSymptom4",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Joint Pain, Swelling, ExtraSymptom0",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Sore Throat, Swollen Glands, ExtraSymptom1",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom2",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Rash, Itching, Swelling, ExtraSymptom3",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom4",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom0",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Rash, Itching, Swelling, ExtraSymptom1",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Chest Pain, Shortness of Breath, ExtraSymptom2",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom3",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Fever, Cough, Fatigue, ExtraSymptom4",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Headache, Nausea, Blurred Vision, ExtraSymptom0",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Rash, Itching, Swelling, ExtraSymptom1",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Chest Pain, Shortness of Breath, ExtraSymptom2",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Joint Pain, Swelling, ExtraSymptom3",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom4",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom0",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Frequent Urination, Thirst, ExtraSymptom1",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom2",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Headache, Nausea, Blurred Vision, ExtraSymptom3",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom4",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Frequent Urination, Thirst, ExtraSymptom0",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Back Pain, Numbness in Legs, ExtraSymptom1",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Frequent Urination, Thirst, ExtraSymptom2",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom3",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Sore Throat, Swollen Glands, ExtraSymptom4",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Chest Pain, Shortness of Breath, ExtraSymptom0",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Headache, Nausea, Blurred Vision, ExtraSymptom1",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom2",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Frequent Urination, Thirst, ExtraSymptom3",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Frequent Urination, Thirst, ExtraSymptom4",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Rash, Itching, Swelling, ExtraSymptom0",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom1",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom2",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom3",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Rash, Itching, Swelling, ExtraSymptom4",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom0",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom1",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Fever, Cough, Fatigue, ExtraSymptom2",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Headache, Nausea, Blurred Vision, ExtraSymptom3",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Back Pain, Numbness in Legs, ExtraSymptom4",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Sore Throat, Swollen Glands, ExtraSymptom0",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Rash, Itching, Swelling, ExtraSymptom1",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Headache, Nausea, Blurred Vision, ExtraSymptom2",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Joint Pain, Swelling, ExtraSymptom3",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Headache, Nausea, Blurred Vision, ExtraSymptom4",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Fever, Cough, Fatigue, ExtraSymptom0",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Back Pain, Numbness in Legs, ExtraSymptom1",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Frequent Urination, Thirst, ExtraSymptom2",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Headache, Nausea, Blurred Vision, ExtraSymptom3",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Chest Pain, Shortness of Breath, ExtraSymptom4",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Rash, Itching, Swelling, ExtraSymptom0",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Chest Pain, Shortness of Breath, ExtraSymptom1",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Headache, Nausea, Blurred Vision, ExtraSymptom2",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Joint Pain, Swelling, ExtraSymptom3",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Rash, Itching, Swelling, ExtraSymptom4",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom0",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Chest Pain, Shortness of Breath, ExtraSymptom1",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Joint Pain, Swelling, ExtraSymptom2",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Rash, Itching, Swelling, ExtraSymptom3",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Rash, Itching, Swelling, ExtraSymptom4",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Back Pain, Numbness in Legs, ExtraSymptom0",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Back Pain, Numbness in Legs, ExtraSymptom1",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Frequent Urination, Thirst, ExtraSymptom2",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Sore Throat, Swollen Glands, ExtraSymptom3",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Joint Pain, Swelling, ExtraSymptom4",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Sore Throat, Swollen Glands, ExtraSymptom0",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Headache, Nausea, Blurred Vision, ExtraSymptom1",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Chest Pain, Shortness of Breath, ExtraSymptom2",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom3",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Chest Pain, Shortness of Breath, ExtraSymptom4",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom0",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Chest Pain, Shortness of Breath, ExtraSymptom1",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Fever, Cough, Fatigue, ExtraSymptom2",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Rash, Itching, Swelling, ExtraSymptom3",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom4",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Sore Throat, Swollen Glands, ExtraSymptom0",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Chest Pain, Shortness of Breath, ExtraSymptom1",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Sore Throat, Swollen Glands, ExtraSymptom2",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Back Pain, Numbness in Legs, ExtraSymptom3",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom4",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom0",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Joint Pain, Swelling, ExtraSymptom1",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Chest Pain, Shortness of Breath, ExtraSymptom2",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Back Pain, Numbness in Legs, ExtraSymptom3",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Back Pain, Numbness in Legs, ExtraSymptom4",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Rash, Itching, Swelling, ExtraSymptom0",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Headache, Nausea, Blurred Vision, ExtraSymptom1",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Rash, Itching, Swelling, ExtraSymptom2",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Headache, Nausea, Blurred Vision, ExtraSymptom3",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom4",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom0",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom1",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Back Pain, Numbness in Legs, ExtraSymptom2",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Joint Pain, Swelling, ExtraSymptom3",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom4",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Chest Pain, Shortness of Breath, ExtraSymptom0",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom1",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Headache, Nausea, Blurred Vision, ExtraSymptom2",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom3",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Rash, Itching, Swelling, ExtraSymptom4",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom0",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Chest Pain, Shortness of Breath, ExtraSymptom1",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom2",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Chest Pain, Shortness of Breath, ExtraSymptom3",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Back Pain, Numbness in Legs, ExtraSymptom4",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Fever, Cough, Fatigue, ExtraSymptom0",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Fever, Cough, Fatigue, ExtraSymptom1",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom2",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Joint Pain, Swelling, ExtraSymptom3",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Fever, Cough, Fatigue, ExtraSymptom4",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom0",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Back Pain, Numbness in Legs, ExtraSymptom1",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Chest Pain, Shortness of Breath, ExtraSymptom2",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Back Pain, Numbness in Legs, ExtraSymptom3",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Frequent Urination, Thirst, ExtraSymptom4",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Frequent Urination, Thirst, ExtraSymptom0",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom1",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Chest Pain, Shortness of Breath, ExtraSymptom2",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Headache, Nausea, Blurred Vision, ExtraSymptom3",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom4",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Chest Pain, Shortness of Breath, ExtraSymptom0",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Chest Pain, Shortness of Breath, ExtraSymptom1",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Fever, Cough, Fatigue, ExtraSymptom2",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Chest Pain, Shortness of Breath, ExtraSymptom3",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Sore Throat, Swollen Glands, ExtraSymptom4",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Rash, Itching, Swelling, ExtraSymptom0",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Sore Throat, Swollen Glands, ExtraSymptom1",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom2",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Back Pain, Numbness in Legs, ExtraSymptom3",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Chest Pain, Shortness of Breath, ExtraSymptom4",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Frequent Urination, Thirst, ExtraSymptom0",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Frequent Urination, Thirst, ExtraSymptom1",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Frequent Urination, Thirst, ExtraSymptom2",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Back Pain, Numbness in Legs, ExtraSymptom3",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Frequent Urination, Thirst, ExtraSymptom4",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Joint Pain, Swelling, ExtraSymptom0",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Headache, Nausea, Blurred Vision, ExtraSymptom1",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Back Pain, Numbness in Legs, ExtraSymptom2",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Headache, Nausea, Blurred Vision, ExtraSymptom3",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Headache, Nausea, Blurred Vision, ExtraSymptom4",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Back Pain, Numbness in Legs, ExtraSymptom0",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Sore Throat, Swollen Glands, ExtraSymptom1",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Joint Pain, Swelling, ExtraSymptom2",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Sore Throat, Swollen Glands, ExtraSymptom3",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Joint Pain, Swelling, ExtraSymptom4",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Rash, Itching, Swelling, ExtraSymptom0",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Chest Pain, Shortness of Breath, ExtraSymptom1",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Chest Pain, Shortness of Breath, ExtraSymptom2",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Joint Pain, Swelling, ExtraSymptom3",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Fever, Cough, Fatigue, ExtraSymptom4",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom0",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom1",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Chest Pain, Shortness of Breath, ExtraSymptom2",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Joint Pain, Swelling, ExtraSymptom3",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Headache, Nausea, Blurred Vision, ExtraSymptom4",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Sore Throat, Swollen Glands, ExtraSymptom0",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom1",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Fever, Cough, Fatigue, ExtraSymptom2",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Back Pain, Numbness in Legs, ExtraSymptom3",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Chest Pain, Shortness of Breath, ExtraSymptom4",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Sore Throat, Swollen Glands, ExtraSymptom0",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Fever, Cough, Fatigue, ExtraSymptom1",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Fever, Cough, Fatigue, ExtraSymptom2",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Sore Throat, Swollen Glands, ExtraSymptom3",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Frequent Urination, Thirst, ExtraSymptom4",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Rash, Itching, Swelling, ExtraSymptom0",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Rash, Itching, Swelling, ExtraSymptom1",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Sore Throat, Swollen Glands, ExtraSymptom2",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom3",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Frequent Urination, Thirst, ExtraSymptom4",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Rash, Itching, Swelling, ExtraSymptom0",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom1",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom2",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Headache, Nausea, Blurred Vision, ExtraSymptom3",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Frequent Urination, Thirst, ExtraSymptom4",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Joint Pain, Swelling, ExtraSymptom0",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Headache, Nausea, Blurred Vision, ExtraSymptom1",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Rash, Itching, Swelling, ExtraSymptom2",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Back Pain, Numbness in Legs, ExtraSymptom3",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Headache, Nausea, Blurred Vision, ExtraSymptom4",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Headache, Nausea, Blurred Vision, ExtraSymptom0",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Chest Pain, Shortness of Breath, ExtraSymptom1",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Rash, Itching, Swelling, ExtraSymptom2",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Rash, Itching, Swelling, ExtraSymptom3",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Chest Pain, Shortness of Breath, ExtraSymptom4",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom0",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Back Pain, Numbness in Legs, ExtraSymptom1",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Chest Pain, Shortness of Breath, ExtraSymptom2",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Chest Pain, Shortness of Breath, ExtraSymptom3",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Frequent Urination, Thirst, ExtraSymptom4",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Back Pain, Numbness in Legs, ExtraSymptom0",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Fever, Cough, Fatigue, ExtraSymptom1",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Fever, Cough, Fatigue, ExtraSymptom2",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Back Pain, Numbness in Legs, ExtraSymptom3",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Chest Pain, Shortness of Breath, ExtraSymptom4",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Sore Throat, Swollen Glands, ExtraSymptom0",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Back Pain, Numbness in Legs, ExtraSymptom1",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Sore Throat, Swollen Glands, ExtraSymptom2",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Fever, Cough, Fatigue, ExtraSymptom3",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Rash, Itching, Swelling, ExtraSymptom4",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Joint Pain, Swelling, ExtraSymptom0",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom1",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Chest Pain, Shortness of Breath, ExtraSymptom2",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom3",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Fever, Cough, Fatigue, ExtraSymptom4",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Fever, Cough, Fatigue, ExtraSymptom0",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Chest Pain, Shortness of Breath, ExtraSymptom1",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Fever, Cough, Fatigue, ExtraSymptom2",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Headache, Nausea, Blurred Vision, ExtraSymptom3",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Chest Pain, Shortness of Breath, ExtraSymptom4",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Sore Throat, Swollen Glands, ExtraSymptom0",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Fever, Cough, Fatigue, ExtraSymptom1",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Back Pain, Numbness in Legs, ExtraSymptom2",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom3",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Chest Pain, Shortness of Breath, ExtraSymptom4",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Rash, Itching, Swelling, ExtraSymptom0",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Chest Pain, Shortness of Breath, ExtraSymptom1",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Headache, Nausea, Blurred Vision, ExtraSymptom2",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Frequent Urination, Thirst, ExtraSymptom3",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Rash, Itching, Swelling, ExtraSymptom4",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Frequent Urination, Thirst, ExtraSymptom0",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom1",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom2",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Joint Pain, Swelling, ExtraSymptom3",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom4",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Fever, Cough, Fatigue, ExtraSymptom0",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom1",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Chest Pain, Shortness of Breath, ExtraSymptom2",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Chest Pain, Shortness of Breath, ExtraSymptom3",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom4",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Frequent Urination, Thirst, ExtraSymptom0",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Headache, Nausea, Blurred Vision, ExtraSymptom1",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Frequent Urination, Thirst, ExtraSymptom2",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Rash, Itching, Swelling, ExtraSymptom3",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom4",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom0",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Sore Throat, Swollen Glands, ExtraSymptom1",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Joint Pain, Swelling, ExtraSymptom2",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Rash, Itching, Swelling, ExtraSymptom3",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom4",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Back Pain, Numbness in Legs, ExtraSymptom0",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Sore Throat, Swollen Glands, ExtraSymptom1",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom2",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Frequent Urination, Thirst, ExtraSymptom3",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Frequent Urination, Thirst, ExtraSymptom4",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom0",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom1",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Headache, Nausea, Blurred Vision, ExtraSymptom2",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Fever, Cough, Fatigue, ExtraSymptom3",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Frequent Urination, Thirst, ExtraSymptom4",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Frequent Urination, Thirst, ExtraSymptom0",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Chest Pain, Shortness of Breath, ExtraSymptom1",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Sore Throat, Swollen Glands, ExtraSymptom2",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom3",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Chest Pain, Shortness of Breath, ExtraSymptom4",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Chest Pain, Shortness of Breath, ExtraSymptom0",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Joint Pain, Swelling, ExtraSymptom1",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Sore Throat, Swollen Glands, ExtraSymptom2",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Joint Pain, Swelling, ExtraSymptom3",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Joint Pain, Swelling, ExtraSymptom4",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Frequent Urination, Thirst, ExtraSymptom0",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Rash, Itching, Swelling, ExtraSymptom1",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Rash, Itching, Swelling, ExtraSymptom2",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Sore Throat, Swollen Glands, ExtraSymptom3",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Sore Throat, Swollen Glands, ExtraSymptom4",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Frequent Urination, Thirst, ExtraSymptom0",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom1",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Chest Pain, Shortness of Breath, ExtraSymptom2",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Frequent Urination, Thirst, ExtraSymptom3",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Chest Pain, Shortness of Breath, ExtraSymptom4",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Chest Pain, Shortness of Breath, ExtraSymptom0",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom1",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom2",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Rash, Itching, Swelling, ExtraSymptom3",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom4",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom0",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Headache, Nausea, Blurred Vision, ExtraSymptom1",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Joint Pain, Swelling, ExtraSymptom2",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Back Pain, Numbness in Legs, ExtraSymptom3",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Headache, Nausea, Blurred Vision, ExtraSymptom4",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Rash, Itching, Swelling, ExtraSymptom0",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Fever, Cough, Fatigue, ExtraSymptom1",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Sore Throat, Swollen Glands, ExtraSymptom2",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Fever, Cough, Fatigue, ExtraSymptom3",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Back Pain, Numbness in Legs, ExtraSymptom4",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Fever, Cough, Fatigue, ExtraSymptom0",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom1",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Headache, Nausea, Blurred Vision, ExtraSymptom2",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Headache, Nausea, Blurred Vision, ExtraSymptom3",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Rash, Itching, Swelling, ExtraSymptom4",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Headache, Nausea, Blurred Vision, ExtraSymptom0",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Sore Throat, Swollen Glands, ExtraSymptom1",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Sore Throat, Swollen Glands, ExtraSymptom2",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Headache, Nausea, Blurred Vision, ExtraSymptom3",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Sore Throat, Swollen Glands, ExtraSymptom4",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Joint Pain, Swelling, ExtraSymptom0",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Back Pain, Numbness in Legs, ExtraSymptom1",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Fever, Cough, Fatigue, ExtraSymptom2",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Back Pain, Numbness in Legs, ExtraSymptom3",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Joint Pain, Swelling, ExtraSymptom4",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom0",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Sore Throat, Swollen Glands, ExtraSymptom1",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Sore Throat, Swollen Glands, ExtraSymptom2",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Frequent Urination, Thirst, ExtraSymptom3",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom4",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Fever, Cough, Fatigue, ExtraSymptom0",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom1",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom2",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Chest Pain, Shortness of Breath, ExtraSymptom3",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Sore Throat, Swollen Glands, ExtraSymptom4",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Headache, Nausea, Blurred Vision, ExtraSymptom0",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom1",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Back Pain, Numbness in Legs, ExtraSymptom2",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Joint Pain, Swelling, ExtraSymptom3",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Frequent Urination, Thirst, ExtraSymptom4",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom0",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Back Pain, Numbness in Legs, ExtraSymptom1",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Headache, Nausea, Blurred Vision, ExtraSymptom2",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Headache, Nausea, Blurred Vision, ExtraSymptom3",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Chest Pain, Shortness of Breath, ExtraSymptom4",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Headache, Nausea, Blurred Vision, ExtraSymptom0",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Fever, Cough, Fatigue, ExtraSymptom1",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Sore Throat, Swollen Glands, ExtraSymptom2",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Chest Pain, Shortness of Breath, ExtraSymptom3",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom4",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Fever, Cough, Fatigue, ExtraSymptom0",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom1",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Rash, Itching, Swelling, ExtraSymptom2",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Headache, Nausea, Blurred Vision, ExtraSymptom3",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Frequent Urination, Thirst, ExtraSymptom4",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Headache, Nausea, Blurred Vision, ExtraSymptom0",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Frequent Urination, Thirst, ExtraSymptom1",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Sore Throat, Swollen Glands, ExtraSymptom2",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Rash, Itching, Swelling, ExtraSymptom3",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Fever, Cough, Fatigue, ExtraSymptom4",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Sore Throat, Swollen Glands, ExtraSymptom0",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Frequent Urination, Thirst, ExtraSymptom1",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Frequent Urination, Thirst, ExtraSymptom2",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Joint Pain, Swelling, ExtraSymptom3",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Back Pain, Numbness in Legs, ExtraSymptom4",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Chest Pain, Shortness of Breath, ExtraSymptom0",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom1",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Fever, Cough, Fatigue, ExtraSymptom2",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Rash, Itching, Swelling, ExtraSymptom3",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom4",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom0",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Chest Pain, Shortness of Breath, ExtraSymptom1",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Headache, Nausea, Blurred Vision, ExtraSymptom2",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Headache, Nausea, Blurred Vision, ExtraSymptom3",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom4",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Chest Pain, Shortness of Breath, ExtraSymptom0",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Chest Pain, Shortness of Breath, ExtraSymptom1",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Fever, Cough, Fatigue, ExtraSymptom2",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Headache, Nausea, Blurred Vision, ExtraSymptom3",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Frequent Urination, Thirst, ExtraSymptom4",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Back Pain, Numbness in Legs, ExtraSymptom0",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Back Pain, Numbness in Legs, ExtraSymptom1",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Rash, Itching, Swelling, ExtraSymptom2",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Frequent Urination, Thirst, ExtraSymptom3",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Chest Pain, Shortness of Breath, ExtraSymptom4",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Chest Pain, Shortness of Breath, ExtraSymptom0",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Joint Pain, Swelling, ExtraSymptom1",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Chest Pain, Shortness of Breath, ExtraSymptom2",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Rash, Itching, Swelling, ExtraSymptom3",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Rash, Itching, Swelling, ExtraSymptom4",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Frequent Urination, Thirst, ExtraSymptom0",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Frequent Urination, Thirst, ExtraSymptom1",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom2",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Rash, Itching, Swelling, ExtraSymptom3",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Joint Pain, Swelling, ExtraSymptom4",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Frequent Urination, Thirst, ExtraSymptom0",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Frequent Urination, Thirst, ExtraSymptom1",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom2",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Back Pain, Numbness in Legs, ExtraSymptom3",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Rash, Itching, Swelling, ExtraSymptom4",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Frequent Urination, Thirst, ExtraSymptom0",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Headache, Nausea, Blurred Vision, ExtraSymptom1",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Sore Throat, Swollen Glands, ExtraSymptom2",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom3",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Rash, Itching, Swelling, ExtraSymptom4",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Sore Throat, Swollen Glands, ExtraSymptom0",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom1",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Fever, Cough, Fatigue, ExtraSymptom2",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Chest Pain, Shortness of Breath, ExtraSymptom3",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Sore Throat, Swollen Glands, ExtraSymptom4",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Rash, Itching, Swelling, ExtraSymptom0",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Chest Pain, Shortness of Breath, ExtraSymptom1",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Frequent Urination, Thirst, ExtraSymptom2",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom3",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Rash, Itching, Swelling, ExtraSymptom4",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Back Pain, Numbness in Legs, ExtraSymptom0",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Fever, Cough, Fatigue, ExtraSymptom1",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom2",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom3",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Sore Throat, Swollen Glands, ExtraSymptom4",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Frequent Urination, Thirst, ExtraSymptom0",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Fever, Cough, Fatigue, ExtraSymptom1",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Sore Throat, Swollen Glands, ExtraSymptom2",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Rash, Itching, Swelling, ExtraSymptom3",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom4",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom0",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Sore Throat, Swollen Glands, ExtraSymptom1",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Sore Throat, Swollen Glands, ExtraSymptom2",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Rash, Itching, Swelling, ExtraSymptom3",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Headache, Nausea, Blurred Vision, ExtraSymptom4",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Headache, Nausea, Blurred Vision, ExtraSymptom0",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Headache, Nausea, Blurred Vision, ExtraSymptom1",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom2",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom3",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Sore Throat, Swollen Glands, ExtraSymptom4",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Rash, Itching, Swelling, ExtraSymptom0",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Fever, Cough, Fatigue, ExtraSymptom1",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Sore Throat, Swollen Glands, ExtraSymptom2",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Sore Throat, Swollen Glands, ExtraSymptom3",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Headache, Nausea, Blurred Vision, ExtraSymptom4",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Back Pain, Numbness in Legs, ExtraSymptom0",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Fever, Cough, Fatigue, ExtraSymptom1",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Joint Pain, Swelling, ExtraSymptom2",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Sore Throat, Swollen Glands, ExtraSymptom3",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Chest Pain, Shortness of Breath, ExtraSymptom4",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Fever, Cough, Fatigue, ExtraSymptom0",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Chest Pain, Shortness of Breath, ExtraSymptom1",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Headache, Nausea, Blurred Vision, ExtraSymptom2",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Headache, Nausea, Blurred Vision, ExtraSymptom3",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Back Pain, Numbness in Legs, ExtraSymptom4",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Frequent Urination, Thirst, ExtraSymptom0",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Chest Pain, Shortness of Breath, ExtraSymptom1",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Joint Pain, Swelling, ExtraSymptom2",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Sore Throat, Swollen Glands, ExtraSymptom3",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Chest Pain, Shortness of Breath, ExtraSymptom4",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Frequent Urination, Thirst, ExtraSymptom0",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom1",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Headache, Nausea, Blurred Vision, ExtraSymptom2",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Frequent Urination, Thirst, ExtraSymptom3",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Rash, Itching, Swelling, ExtraSymptom4",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom0",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Chest Pain, Shortness of Breath, ExtraSymptom1",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Rash, Itching, Swelling, ExtraSymptom2",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Frequent Urination, Thirst, ExtraSymptom3",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Back Pain, Numbness in Legs, ExtraSymptom4",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom0",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Rash, Itching, Swelling, ExtraSymptom1",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Headache, Nausea, Blurred Vision, ExtraSymptom2",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom3",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Rash, Itching, Swelling, ExtraSymptom4",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Joint Pain, Swelling, ExtraSymptom0",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Frequent Urination, Thirst, ExtraSymptom1",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom2",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Chest Pain, Shortness of Breath, ExtraSymptom3",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Frequent Urination, Thirst, ExtraSymptom4",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Rash, Itching, Swelling, ExtraSymptom0",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom1",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Rash, Itching, Swelling, ExtraSymptom2",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Headache, Nausea, Blurred Vision, ExtraSymptom3",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Headache, Nausea, Blurred Vision, ExtraSymptom4",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom0",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Chest Pain, Shortness of Breath, ExtraSymptom1",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Frequent Urination, Thirst, ExtraSymptom2",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Headache, Nausea, Blurred Vision, ExtraSymptom3",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Chest Pain, Shortness of Breath, ExtraSymptom4",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom0",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Back Pain, Numbness in Legs, ExtraSymptom1",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Joint Pain, Swelling, ExtraSymptom2",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Joint Pain, Swelling, ExtraSymptom3",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom4",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom0",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Rash, Itching, Swelling, ExtraSymptom1",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Joint Pain, Swelling, ExtraSymptom2",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Chest Pain, Shortness of Breath, ExtraSymptom3",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Back Pain, Numbness in Legs, ExtraSymptom4",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Sore Throat, Swollen Glands, ExtraSymptom0",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom1",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Frequent Urination, Thirst, ExtraSymptom2",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Back Pain, Numbness in Legs, ExtraSymptom3",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Sore Throat, Swollen Glands, ExtraSymptom4",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Rash, Itching, Swelling, ExtraSymptom0",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom1",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Back Pain, Numbness in Legs, ExtraSymptom2",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Rash, Itching, Swelling, ExtraSymptom3",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Headache, Nausea, Blurred Vision, ExtraSymptom4",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Headache, Nausea, Blurred Vision, ExtraSymptom0",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Frequent Urination, Thirst, ExtraSymptom1",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Joint Pain, Swelling, ExtraSymptom2",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Headache, Nausea, Blurred Vision, ExtraSymptom3",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Chest Pain, Shortness of Breath, ExtraSymptom4",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Headache, Nausea, Blurred Vision, ExtraSymptom0",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Rash, Itching, Swelling, ExtraSymptom1",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Back Pain, Numbness in Legs, ExtraSymptom2",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Joint Pain, Swelling, ExtraSymptom3",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Chest Pain, Shortness of Breath, ExtraSymptom4",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Back Pain, Numbness in Legs, ExtraSymptom0",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Joint Pain, Swelling, ExtraSymptom1",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Sore Throat, Swollen Glands, ExtraSymptom2",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Back Pain, Numbness in Legs, ExtraSymptom3",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Sore Throat, Swollen Glands, ExtraSymptom4",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom0",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Rash, Itching, Swelling, ExtraSymptom1",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Fever, Cough, Fatigue, ExtraSymptom2",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Sore Throat, Swollen Glands, ExtraSymptom3",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Fever, Cough, Fatigue, ExtraSymptom4",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Chest Pain, Shortness of Breath, ExtraSymptom0",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Rash, Itching, Swelling, ExtraSymptom1",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Headache, Nausea, Blurred Vision, ExtraSymptom2",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Joint Pain, Swelling, ExtraSymptom3",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom4",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Fever, Cough, Fatigue, ExtraSymptom0",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Frequent Urination, Thirst, ExtraSymptom1",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom2",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Chest Pain, Shortness of Breath, ExtraSymptom3",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Fever, Cough, Fatigue, ExtraSymptom4",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Chest Pain, Shortness of Breath, ExtraSymptom0",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Joint Pain, Swelling, ExtraSymptom1",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Fever, Cough, Fatigue, ExtraSymptom2",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom3",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Chest Pain, Shortness of Breath, ExtraSymptom4",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Sore Throat, Swollen Glands, ExtraSymptom0",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Back Pain, Numbness in Legs, ExtraSymptom1",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Headache, Nausea, Blurred Vision, ExtraSymptom2",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Fever, Cough, Fatigue, ExtraSymptom3",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom4",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Headache, Nausea, Blurred Vision, ExtraSymptom0",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Chest Pain, Shortness of Breath, ExtraSymptom1",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Chest Pain, Shortness of Breath, ExtraSymptom2",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Back Pain, Numbness in Legs, ExtraSymptom3",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom4",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Frequent Urination, Thirst, ExtraSymptom0",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Joint Pain, Swelling, ExtraSymptom1",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Fever, Cough, Fatigue, ExtraSymptom2",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Sore Throat, Swollen Glands, ExtraSymptom3",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom4",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Headache, Nausea, Blurred Vision, ExtraSymptom0",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom1",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Back Pain, Numbness in Legs, ExtraSymptom2",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Frequent Urination, Thirst, ExtraSymptom3",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Joint Pain, Swelling, ExtraSymptom4",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Rash, Itching, Swelling, ExtraSymptom0",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Rash, Itching, Swelling, ExtraSymptom1",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Frequent Urination, Thirst, ExtraSymptom2",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Sore Throat, Swollen Glands, ExtraSymptom3",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Fever, Cough, Fatigue, ExtraSymptom4",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom0",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Sore Throat, Swollen Glands, ExtraSymptom1",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Joint Pain, Swelling, ExtraSymptom2",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Fever, Cough, Fatigue, ExtraSymptom3",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Chest Pain, Shortness of Breath, ExtraSymptom4",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Sore Throat, Swollen Glands, ExtraSymptom0",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Headache, Nausea, Blurred Vision, ExtraSymptom1",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Back Pain, Numbness in Legs, ExtraSymptom2",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Chest Pain, Shortness of Breath, ExtraSymptom3",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Rash, Itching, Swelling, ExtraSymptom4",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom0",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Joint Pain, Swelling, ExtraSymptom1",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Joint Pain, Swelling, ExtraSymptom2",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Chest Pain, Shortness of Breath, ExtraSymptom3",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Back Pain, Numbness in Legs, ExtraSymptom4",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Headache, Nausea, Blurred Vision, ExtraSymptom0",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Headache, Nausea, Blurred Vision, ExtraSymptom1",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Headache, Nausea, Blurred Vision, ExtraSymptom2",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom3",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Rash, Itching, Swelling, ExtraSymptom4",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Headache, Nausea, Blurred Vision, ExtraSymptom0",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom1",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom2",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Joint Pain, Swelling, ExtraSymptom3",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Fever, Cough, Fatigue, ExtraSymptom4",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Sore Throat, Swollen Glands, ExtraSymptom0",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom1",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Joint Pain, Swelling, ExtraSymptom2",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Sore Throat, Swollen Glands, ExtraSymptom3",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Fever, Cough, Fatigue, ExtraSymptom4",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Back Pain, Numbness in Legs, ExtraSymptom0",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Sore Throat, Swollen Glands, ExtraSymptom1",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Chest Pain, Shortness of Breath, ExtraSymptom2",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Joint Pain, Swelling, ExtraSymptom3",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Chest Pain, Shortness of Breath, ExtraSymptom4",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Sore Throat, Swollen Glands, ExtraSymptom0",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Joint Pain, Swelling, ExtraSymptom1",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Frequent Urination, Thirst, ExtraSymptom2",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Back Pain, Numbness in Legs, ExtraSymptom3",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Headache, Nausea, Blurred Vision, ExtraSymptom4",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Back Pain, Numbness in Legs, ExtraSymptom0",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Joint Pain, Swelling, ExtraSymptom1",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Fever, Cough, Fatigue, ExtraSymptom2",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Back Pain, Numbness in Legs, ExtraSymptom3",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Rash, Itching, Swelling, ExtraSymptom4",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Fever, Cough, Fatigue, ExtraSymptom0",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom1",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Chest Pain, Shortness of Breath, ExtraSymptom2",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Rash, Itching, Swelling, ExtraSymptom3",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom4",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom0",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom1",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Joint Pain, Swelling, ExtraSymptom2",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Back Pain, Numbness in Legs, ExtraSymptom3",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Sore Throat, Swollen Glands, ExtraSymptom4",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom0",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom1",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Rash, Itching, Swelling, ExtraSymptom2",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom3",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Sore Throat, Swollen Glands, ExtraSymptom4",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Sore Throat, Swollen Glands, ExtraSymptom0",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom1",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Sore Throat, Swollen Glands, ExtraSymptom2",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom3",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom4",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Frequent Urination, Thirst, ExtraSymptom0",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Frequent Urination, Thirst, ExtraSymptom1",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom2",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Joint Pain, Swelling, ExtraSymptom3",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Frequent Urination, Thirst, ExtraSymptom4",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Frequent Urination, Thirst, ExtraSymptom0",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Chest Pain, Shortness of Breath, ExtraSymptom1",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Frequent Urination, Thirst, ExtraSymptom2",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom3",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Sore Throat, Swollen Glands, ExtraSymptom4",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom0",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom1",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Chest Pain, Shortness of Breath, ExtraSymptom2",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Joint Pain, Swelling, ExtraSymptom3",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom4",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Joint Pain, Swelling, ExtraSymptom0",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Headache, Nausea, Blurred Vision, ExtraSymptom1",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Chest Pain, Shortness of Breath, ExtraSymptom2",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Frequent Urination, Thirst, ExtraSymptom3",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Joint Pain, Swelling, ExtraSymptom4",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Joint Pain, Swelling, ExtraSymptom0",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Rash, Itching, Swelling, ExtraSymptom1",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Chest Pain, Shortness of Breath, ExtraSymptom2",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Sore Throat, Swollen Glands, ExtraSymptom3",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Fever, Cough, Fatigue, ExtraSymptom4",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Chest Pain, Shortness of Breath, ExtraSymptom0",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Rash, Itching, Swelling, ExtraSymptom1",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Headache, Nausea, Blurred Vision, ExtraSymptom2",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Sore Throat, Swollen Glands, ExtraSymptom3",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Back Pain, Numbness in Legs, ExtraSymptom4",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Chest Pain, Shortness of Breath, ExtraSymptom0",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Frequent Urination, Thirst, ExtraSymptom1",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Frequent Urination, Thirst, ExtraSymptom2",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom3",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom4",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Joint Pain, Swelling, ExtraSymptom0",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Rash, Itching, Swelling, ExtraSymptom1",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Rash, Itching, Swelling, ExtraSymptom2",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Back Pain, Numbness in Legs, ExtraSymptom3",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Back Pain, Numbness in Legs, ExtraSymptom4",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Headache, Nausea, Blurred Vision, ExtraSymptom0",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Fever, Cough, Fatigue, ExtraSymptom1",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom2",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Frequent Urination, Thirst, ExtraSymptom3",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom4",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom0",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Frequent Urination, Thirst, ExtraSymptom1",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Fever, Cough, Fatigue, ExtraSymptom2",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom3",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Back Pain, Numbness in Legs, ExtraSymptom4",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Joint Pain, Swelling, ExtraSymptom0",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Frequent Urination, Thirst, ExtraSymptom1",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Joint Pain, Swelling, ExtraSymptom2",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Back Pain, Numbness in Legs, ExtraSymptom3",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom4",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom0",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Joint Pain, Swelling, ExtraSymptom1",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Sore Throat, Swollen Glands, ExtraSymptom2",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Rash, Itching, Swelling, ExtraSymptom3",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Rash, Itching, Swelling, ExtraSymptom4",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Headache, Nausea, Blurred Vision, ExtraSymptom0",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Headache, Nausea, Blurred Vision, ExtraSymptom1",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Rash, Itching, Swelling, ExtraSymptom2",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Fever, Cough, Fatigue, ExtraSymptom3",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Headache, Nausea, Blurred Vision, ExtraSymptom4",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Frequent Urination, Thirst, ExtraSymptom0",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Headache, Nausea, Blurred Vision, ExtraSymptom1",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom2",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Chest Pain, Shortness of Breath, ExtraSymptom3",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Chest Pain, Shortness of Breath, ExtraSymptom4",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Chest Pain, Shortness of Breath, ExtraSymptom0",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Sore Throat, Swollen Glands, ExtraSymptom1",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Fever, Cough, Fatigue, ExtraSymptom2",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Joint Pain, Swelling, ExtraSymptom3",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Frequent Urination, Thirst, ExtraSymptom4",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Headache, Nausea, Blurred Vision, ExtraSymptom0",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Headache, Nausea, Blurred Vision, ExtraSymptom1",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom2",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Fever, Cough, Fatigue, ExtraSymptom3",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom4",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Chest Pain, Shortness of Breath, ExtraSymptom0",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom1",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Fever, Cough, Fatigue, ExtraSymptom2",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Sore Throat, Swollen Glands, ExtraSymptom3",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom4",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Headache, Nausea, Blurred Vision, ExtraSymptom0",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom1",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom2",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom3",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Frequent Urination, Thirst, ExtraSymptom4",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Chest Pain, Shortness of Breath, ExtraSymptom0",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Headache, Nausea, Blurred Vision, ExtraSymptom1",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Back Pain, Numbness in Legs, ExtraSymptom2",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom3",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Back Pain, Numbness in Legs, ExtraSymptom4",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Joint Pain, Swelling, ExtraSymptom0",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Back Pain, Numbness in Legs, ExtraSymptom1",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Rash, Itching, Swelling, ExtraSymptom2",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Sore Throat, Swollen Glands, ExtraSymptom3",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Frequent Urination, Thirst, ExtraSymptom4",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Back Pain, Numbness in Legs, ExtraSymptom0",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Headache, Nausea, Blurred Vision, ExtraSymptom1",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Headache, Nausea, Blurred Vision, ExtraSymptom2",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Joint Pain, Swelling, ExtraSymptom3",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom4",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom0",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Headache, Nausea, Blurred Vision, ExtraSymptom1",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Sore Throat, Swollen Glands, ExtraSymptom2",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Back Pain, Numbness in Legs, ExtraSymptom3",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Rash, Itching, Swelling, ExtraSymptom4",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Back Pain, Numbness in Legs, ExtraSymptom0",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Sore Throat, Swollen Glands, ExtraSymptom1",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Rash, Itching, Swelling, ExtraSymptom2",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom3",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Sore Throat, Swollen Glands, ExtraSymptom4",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom0",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom1",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom2",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Fever, Cough, Fatigue, ExtraSymptom3",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Chest Pain, Shortness of Breath, ExtraSymptom4",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Frequent Urination, Thirst, ExtraSymptom0",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom1",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom2",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom3",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Headache, Nausea, Blurred Vision, ExtraSymptom4",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Rash, Itching, Swelling, ExtraSymptom0",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Sore Throat, Swollen Glands, ExtraSymptom1",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Fever, Cough, Fatigue, ExtraSymptom2",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Headache, Nausea, Blurred Vision, ExtraSymptom3",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Chest Pain, Shortness of Breath, ExtraSymptom4",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Fever, Cough, Fatigue, ExtraSymptom0",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Sore Throat, Swollen Glands, ExtraSymptom1",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Headache, Nausea, Blurred Vision, ExtraSymptom2",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Rash, Itching, Swelling, ExtraSymptom3",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom4",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Joint Pain, Swelling, ExtraSymptom0",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Rash, Itching, Swelling, ExtraSymptom1",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom2",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Chest Pain, Shortness of Breath, ExtraSymptom3",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom4",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Back Pain, Numbness in Legs, ExtraSymptom0",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Back Pain, Numbness in Legs, ExtraSymptom1",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Fever, Cough, Fatigue, ExtraSymptom2",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Fever, Cough, Fatigue, ExtraSymptom3",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Chest Pain, Shortness of Breath, ExtraSymptom4",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Headache, Nausea, Blurred Vision, ExtraSymptom0",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Frequent Urination, Thirst, ExtraSymptom1",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Headache, Nausea, Blurred Vision, ExtraSymptom2",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Joint Pain, Swelling, ExtraSymptom3",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Back Pain, Numbness in Legs, ExtraSymptom4",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Headache, Nausea, Blurred Vision, ExtraSymptom0",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Sore Throat, Swollen Glands, ExtraSymptom1",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Headache, Nausea, Blurred Vision, ExtraSymptom2",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom3",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Chest Pain, Shortness of Breath, ExtraSymptom4",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom0",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Frequent Urination, Thirst, ExtraSymptom1",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Fever, Cough, Fatigue, ExtraSymptom2",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom3",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Joint Pain, Swelling, ExtraSymptom4",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Sore Throat, Swollen Glands, ExtraSymptom0",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Back Pain, Numbness in Legs, ExtraSymptom1",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom2",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Headache, Nausea, Blurred Vision, ExtraSymptom3",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Headache, Nausea, Blurred Vision, ExtraSymptom4",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom0",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Frequent Urination, Thirst, ExtraSymptom1",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Frequent Urination, Thirst, ExtraSymptom2",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Fever, Cough, Fatigue, ExtraSymptom3",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Chest Pain, Shortness of Breath, ExtraSymptom4",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom0",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Sore Throat, Swollen Glands, ExtraSymptom1",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Joint Pain, Swelling, ExtraSymptom2",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Chest Pain, Shortness of Breath, ExtraSymptom3",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Joint Pain, Swelling, ExtraSymptom4",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom0",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Headache, Nausea, Blurred Vision, ExtraSymptom1",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom2",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom3",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom4",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Frequent Urination, Thirst, ExtraSymptom0",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Back Pain, Numbness in Legs, ExtraSymptom1",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom2",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Back Pain, Numbness in Legs, ExtraSymptom3",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Chest Pain, Shortness of Breath, ExtraSymptom4",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Frequent Urination, Thirst, ExtraSymptom0",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Joint Pain, Swelling, ExtraSymptom1",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Fever, Cough, Fatigue, ExtraSymptom2",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Sore Throat, Swollen Glands, ExtraSymptom3",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Headache, Nausea, Blurred Vision, ExtraSymptom4",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom0",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Fever, Cough, Fatigue, ExtraSymptom1",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Fever, Cough, Fatigue, ExtraSymptom2",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Rash, Itching, Swelling, ExtraSymptom3",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom4",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Fever, Cough, Fatigue, ExtraSymptom0",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Back Pain, Numbness in Legs, ExtraSymptom1",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom2",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Rash, Itching, Swelling, ExtraSymptom3",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Frequent Urination, Thirst, ExtraSymptom4",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Fever, Cough, Fatigue, ExtraSymptom0",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom1",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom2",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Headache, Nausea, Blurred Vision, ExtraSymptom3",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom4",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom0",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom1",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Chest Pain, Shortness of Breath, ExtraSymptom2",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Back Pain, Numbness in Legs, ExtraSymptom3",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Joint Pain, Swelling, ExtraSymptom4",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Fever, Cough, Fatigue, ExtraSymptom0",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Rash, Itching, Swelling, ExtraSymptom1",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Sore Throat, Swollen Glands, ExtraSymptom2",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom3",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Frequent Urination, Thirst, ExtraSymptom4",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom0",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Back Pain, Numbness in Legs, ExtraSymptom1",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Chest Pain, Shortness of Breath, ExtraSymptom2",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Chest Pain, Shortness of Breath, ExtraSymptom3",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Joint Pain, Swelling, ExtraSymptom4",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Chest Pain, Shortness of Breath, ExtraSymptom0",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Frequent Urination, Thirst, ExtraSymptom1",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Chest Pain, Shortness of Breath, ExtraSymptom2",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Back Pain, Numbness in Legs, ExtraSymptom3",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Joint Pain, Swelling, ExtraSymptom4",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Chest Pain, Shortness of Breath, ExtraSymptom0",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Sore Throat, Swollen Glands, ExtraSymptom1",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Back Pain, Numbness in Legs, ExtraSymptom2",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Headache, Nausea, Blurred Vision, ExtraSymptom3",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom4",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Back Pain, Numbness in Legs, ExtraSymptom0",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Headache, Nausea, Blurred Vision, ExtraSymptom1",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Headache, Nausea, Blurred Vision, ExtraSymptom2",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom3",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Frequent Urination, Thirst, ExtraSymptom4",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom0",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Headache, Nausea, Blurred Vision, ExtraSymptom1",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Sore Throat, Swollen Glands, ExtraSymptom2",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Back Pain, Numbness in Legs, ExtraSymptom3",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Fever, Cough, Fatigue, ExtraSymptom4",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Rash, Itching, Swelling, ExtraSymptom0",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Frequent Urination, Thirst, ExtraSymptom1",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Chest Pain, Shortness of Breath, ExtraSymptom2",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Frequent Urination, Thirst, ExtraSymptom3",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Fever, Cough, Fatigue, ExtraSymptom4",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Sore Throat, Swollen Glands, ExtraSymptom0",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Sore Throat, Swollen Glands, ExtraSymptom1",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Fever, Cough, Fatigue, ExtraSymptom2",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Headache, Nausea, Blurred Vision, ExtraSymptom3",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Joint Pain, Swelling, ExtraSymptom4",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Joint Pain, Swelling, ExtraSymptom0",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Rash, Itching, Swelling, ExtraSymptom1",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Chest Pain, Shortness of Breath, ExtraSymptom2",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Chest Pain, Shortness of Breath, ExtraSymptom3",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom4",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Fever, Cough, Fatigue, ExtraSymptom0",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Rash, Itching, Swelling, ExtraSymptom1",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Back Pain, Numbness in Legs, ExtraSymptom2",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Back Pain, Numbness in Legs, ExtraSymptom3",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Sore Throat, Swollen Glands, ExtraSymptom4",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Chest Pain, Shortness of Breath, ExtraSymptom0",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Joint Pain, Swelling, ExtraSymptom1",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Fever, Cough, Fatigue, ExtraSymptom2",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Headache, Nausea, Blurred Vision, ExtraSymptom3",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Rash, Itching, Swelling, ExtraSymptom4",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Rash, Itching, Swelling, ExtraSymptom0",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Back Pain, Numbness in Legs, ExtraSymptom1",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Headache, Nausea, Blurred Vision, ExtraSymptom2",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom3",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom4",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom0",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Sore Throat, Swollen Glands, ExtraSymptom1",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom2",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom3",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom4",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Back Pain, Numbness in Legs, ExtraSymptom0",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom1",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Fever, Cough, Fatigue, ExtraSymptom2",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Sore Throat, Swollen Glands, ExtraSymptom3",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Chest Pain, Shortness of Breath, ExtraSymptom4",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Back Pain, Numbness in Legs, ExtraSymptom0",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Fever, Cough, Fatigue, ExtraSymptom1",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Back Pain, Numbness in Legs, ExtraSymptom2",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Back Pain, Numbness in Legs, ExtraSymptom3",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom4",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Headache, Nausea, Blurred Vision, ExtraSymptom0",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Rash, Itching, Swelling, ExtraSymptom1",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Back Pain, Numbness in Legs, ExtraSymptom2",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Sore Throat, Swollen Glands, ExtraSymptom3",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom4",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Frequent Urination, Thirst, ExtraSymptom0",Diabetes Type 2,EndoHealth Institute,"Phoenix, AZ",Dr. Omar Nasser,"Metformin, Insulin",ADA Diabetes Management Resources
+"Sore Throat, Swollen Glands, ExtraSymptom1",Tonsillitis,Medline Children Hospital,"Atlanta, GA",Dr. Maria Gonzalez,"Antibiotics, Throat Lozenges",Mayo Clinic Tonsillitis Info
+"Joint Pain, Swelling, ExtraSymptom2",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Fever, Cough, Fatigue, ExtraSymptom3",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Back Pain, Numbness in Legs, ExtraSymptom4",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Rash, Itching, Swelling, ExtraSymptom0",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Fever, Cough, Fatigue, ExtraSymptom1",Influenza,NyiranumaHC,Nyarugenge,Dr. Alice Smith,"Paracetamol, Cough Syrup","WHO Flu Guide, CDC Influenza Guidelines"
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom2",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Rash, Itching, Swelling, ExtraSymptom3",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Chest Pain, Shortness of Breath, ExtraSymptom4",Angina,Remera HC,Gasabo,Dr. James Lin,"Nitroglycerin, ECG Machine",American Heart Association Tips
+"Headache, Nausea, Blurred Vision, ExtraSymptom0",Migraine,Ruhengeri HC,Musanze,Dr. Priya Kapoor,"Ibuprofen, Anti-nausea Tablets",Migraine Research Foundation
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom1",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Back Pain, Numbness in Legs, ExtraSymptom2",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Joint Pain, Swelling, ExtraSymptom3",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Rash, Itching, Swelling, ExtraSymptom4",Allergic Reaction,Allergy Relief Center,"Denver, CO",Dr. Angela Perez,"Antihistamines, EpiPen","American College of Allergy, Asthma & Immunology"
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom0",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
+"Joint Pain, Swelling, ExtraSymptom1",Rheumatoid Arthritis,OrthoWell Clinic,"Seattle, WA",Dr. Henry Adams,"NSAIDs, Methotrexate",Arthritis Foundation Resources
+"Back Pain, Numbness in Legs, ExtraSymptom2",Herniated Disc,SpineCare Hospital,"San Diego, CA",Dr. Rachel O’Connor,"Pain Relievers, MRI",Johns Hopkins Neurosurgery Guide
+"Stomach Pain, Diarrhea, Vomiting, ExtraSymptom3",Food Poisoning,UrgentCare Medical,"Miami, FL",Dr. Chen Liu,"Oral Rehydration Salts, Antiemetics",WHO Food Safety Guide
+"Fatigue, Weight Loss, Night Sweats, ExtraSymptom4",Tuberculosis,National TB Center,"Houston, TX",Dr. Samuel Lee,"Isoniazid, Rifampin",CDC TB Guidelines
